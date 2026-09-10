@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LifeClinique | Saúde e Bem-Estar em Viseu</title>
-<meta name="description" content="LifeClinique - cuidados de saúde com confiança, proximidade e uma equipa multidisciplinar dedicada a si e à sua família.">
+<meta name="description" content="LifeClinique — cuidados de saúde com confiança, proximidade e uma equipa multidisciplinar dedicada a si e à sua família.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Crect width='44' height='44' rx='13' fill='%232A9D8F'/%3E%3Cg transform='translate(10,10)'%3E%3Cpath d='M12 21s-7-4.35-9.5-9C.8 8.1 2.2 4.5 6 4c2 0 3.5 1.2 4.2 2.5C10.9 5.2 12.4 4 14.4 4c3.8.5 5.2 4.1 3.5 8C15.4 16.65 12 21 12 21z' fill='white'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<!-- Controlo de navegação -->
+<!-- Controlo de navegação (sem JavaScript) -->
 <input type="radio" name="panel-nav" id="nav-inicio" class="nav-radio" checked>
 <input type="radio" name="panel-nav" id="nav-servicos" class="nav-radio">
 <input type="radio" name="panel-nav" id="nav-especialistas" class="nav-radio">
@@ -24,7 +24,7 @@
 
 <div class="app-shell">
 
-  <!-- BARRA LATERAL / NAVEGAÇÃO POR ÍCONES -->
+  <!-- ====== BARRA LATERAL / NAVEGAÇÃO POR ÍCONES ====== -->
   <aside class="sidebar">
     <label for="nav-inicio" class="sidebar-logo" aria-label="LifeClinique - Início">
       <svg viewBox="0 0 44 44" width="40" height="40">
@@ -79,25 +79,25 @@
     </label>
   </aside>
 
-  <!-- CONTEÚDO PRINCIPAL -->
+  <!-- ====== CONTEÚDO PRINCIPAL (um ecrã por cada clique) ====== -->
   <main class="content">
     <div class="panels">
 
-      <!-- INÍCIO -->
+      <!-- ====== INÍCIO ====== -->
       <section class="panel panel-hero" id="panel-inicio">
         <div class="hero-inner">
           <div class="hero-text">
-            <p class="eyebrow">Cuidados de saúde</p>
+            <p class="eyebrow">Cuidados de saúde em Viseu</p>
             <h1>Cuidar de si, <span class="accent">com confiança</span> e proximidade.</h1>
-            <p class="hero-lead">Na LifeClinique encontra uma equipa multidisciplinar dedicada ao seu bem-estar - do check-up de rotina ao acompanhamento especializado, em cada fase da vida.</p>
+            <p class="hero-lead">Na LifeClinique encontra uma equipa multidisciplinar dedicada ao seu bem-estar — do check-up de rotina ao acompanhamento especializado, em cada fase da vida.</p>
             <div class="hero-actions">
               <label for="nav-contactos" class="btn btn-primary">Marcar Consulta</label>
               <label for="nav-servicos" class="btn btn-outline">Ver Serviços</label>
             </div>
             <ul class="hero-stats">
-              <li><strong>+ 15</strong><span>anos de experiência</span></li>
-              <li><strong>8</strong><span>especialidades</span></li>
-              <li><strong>4.9 ★</strong><span>avaliação de pacientes</span></li>
+              <li><strong data-count-to="15" data-suffix="+">0+</strong><span>anos de experiência</span></li>
+              <li><strong data-count-to="8" data-suffix="">0</strong><span>especialidades</span></li>
+              <li><strong data-count-to="4.9" data-decimals="1" data-suffix="★">0★</strong><span>avaliação de pacientes</span></li>
             </ul>
           </div>
           <div class="hero-visual" aria-hidden="true">
@@ -113,9 +113,10 @@
             </div>
           </div>
         </div>
+        <p class="hero-swipe-hint">Explore a clínica clicando nos ícones ao lado →</p>
       </section>
 
-      <!-- SERVIÇOS -->
+      <!-- ====== SERVIÇOS ====== -->
       <section class="panel" id="panel-servicos">
         <p class="section-eyebrow">O que fazemos</p>
         <h2 class="section-title">Os nossos serviços</h2>
@@ -188,7 +189,7 @@
         </div>
       </section>
 
-      <!-- ESPECIALISTAS -->
+      <!-- ====== ESPECIALISTAS ====== -->
       <section class="panel" id="panel-especialistas">
         <p class="section-eyebrow">A nossa equipa</p>
         <h2 class="section-title">Especialistas dedicados a si</h2>
@@ -196,42 +197,42 @@
 
         <div class="team-grid">
           <article class="team-card">
-            <div class="avatar" style="--a:#2A9D8F;--b:#57bfae;"></div>
+            <div class="avatar" style="--a:#2A9D8F;--b:#57bfae;">MS</div>
             <h3>Dr. Miguel Santos</h3>
             <p class="team-role">Medicina Geral e Familiar</p>
             <p class="team-bio">Mais de 18 anos de experiência em cuidados de saúde primários e prevenção.</p>
           </article>
 
           <article class="team-card">
-            <div class="avatar" style="--a:#E76F51;--b:#f3a07f;"></div>
+            <div class="avatar" style="--a:#E76F51;--b:#f3a07f;">BC</div>
             <h3>Dra. Beatriz Costa</h3>
             <p class="team-role">Fisioterapeuta</p>
             <p class="team-bio">Especialista em reabilitação desportiva e ortopédica.</p>
           </article>
 
           <article class="team-card">
-            <div class="avatar" style="--a:#8E7CC3;--b:#b9adf0;"></div>
+            <div class="avatar" style="--a:#8E7CC3;--b:#b9adf0;">CR</div>
             <h3>Dra. Carolina Ramos</h3>
             <p class="team-role">Psicóloga Clínica</p>
             <p class="team-bio">Acompanhamento de ansiedade, stress e bem-estar emocional.</p>
           </article>
 
           <article class="team-card">
-            <div class="avatar" style="--a:#E9C46A;--b:#f3d98f;"></div>
+            <div class="avatar" style="--a:#E9C46A;--b:#f3d98f;">TA</div>
             <h3>Dr. Tiago Almeida</h3>
             <p class="team-role">Pediatra</p>
             <p class="team-bio">Dedicado ao acompanhamento do desenvolvimento infantil desde o nascimento.</p>
           </article>
 
           <article class="team-card">
-            <div class="avatar" style="--a:#4FA3C4;--b:#87c6df;"></div>
+            <div class="avatar" style="--a:#4FA3C4;--b:#87c6df;">IF</div>
             <h3>Dra. Inês Ferreira</h3>
             <p class="team-role">Nutricionista</p>
             <p class="team-bio">Planos alimentares personalizados para todas as idades e objetivos.</p>
           </article>
 
           <article class="team-card">
-            <div class="avatar" style="--a:#D46A9F;--b:#eaa0c6;"></div>
+            <div class="avatar" style="--a:#D46A9F;--b:#eaa0c6;">RM</div>
             <h3>Dr. Rui Marques</h3>
             <p class="team-role">Dermatologista</p>
             <p class="team-bio">Focado em saúde e estética da pele com abordagem preventiva.</p>
@@ -239,7 +240,7 @@
         </div>
       </section>
 
-      <!-- SOBRE A CLÍNICA -->
+      <!-- ====== SOBRE A CLÍNICA ====== -->
       <section class="panel about" id="panel-sobre">
         <div class="about-inner">
           <div class="about-text">
@@ -306,7 +307,7 @@
         </div>
       </section>
 
-      <!-- TESTEMUNHOS -->
+      <!-- ====== TESTEMUNHOS ====== -->
       <section class="panel" id="panel-testemunhos">
         <input type="radio" name="testi-nav" id="testi-1" class="testi-radio" checked>
         <input type="radio" name="testi-nav" id="testi-2" class="testi-radio">
@@ -382,7 +383,7 @@
         </div>
       </section>
 
-      <!-- HORÁRIO -->
+      <!-- ====== HORÁRIO ====== -->
       <section class="panel" id="panel-horario">
         <div class="schedule-inner">
           <div class="schedule-text">
@@ -472,36 +473,49 @@
             </div>
           </div>
 
-          <form class="contact-form" aria-label="Formulário de contacto">
-            <h3>Envie-nos uma mensagem</h3>
-            <div class="form-row">
-              <label for="nome">Nome</label>
-              <input type="text" id="nome" name="nome" placeholder="O seu nome" required>
+          <form class="contact-form" id="contact-form" aria-label="Formulário de contacto" novalidate>
+            <div class="form-body">
+              <h3>Envie-nos uma mensagem</h3>
+              <div class="form-row">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="O seu nome" required>
+                <span class="form-error-msg" id="erro-nome" aria-live="polite"></span>
+              </div>
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="o.seu@email.pt" required>
+                <span class="form-error-msg" id="erro-email" aria-live="polite"></span>
+              </div>
+              <div class="form-row">
+                <label for="assunto">Assunto</label>
+                <select id="assunto" name="assunto">
+                  <option>Marcação de consulta</option>
+                  <option>Informações gerais</option>
+                  <option>Outro</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="2" placeholder="Como podemos ajudar?" required></textarea>
+                <span class="form-error-msg" id="erro-mensagem" aria-live="polite"></span>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit">Enviar Mensagem</button>
             </div>
-            <div class="form-row">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="o.seu@email.pt" required>
+            <div class="form-success" id="form-success" hidden>
+              <span class="form-success-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="10" fill="none" stroke="#2A9D8F" stroke-width="1.8"/><path d="M7.5 12.5l3 3 6-6.5" fill="none" stroke="#2A9D8F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <h3>Mensagem enviada!</h3>
+              <p>Obrigado pelo contacto. A nossa equipa responde o mais brevemente possível.</p>
+              <button type="button" class="btn btn-outline" id="form-reset-btn">Enviar outra mensagem</button>
             </div>
-            <div class="form-row">
-              <label for="assunto">Assunto</label>
-              <select id="assunto" name="assunto">
-                <option>Marcação de consulta</option>
-                <option>Informações gerais</option>
-                <option>Outro</option>
-              </select>
-            </div>
-            <div class="form-row">
-              <label for="mensagem">Mensagem</label>
-              <textarea id="mensagem" name="mensagem" rows="2" placeholder="Como podemos ajudar?" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary form-submit">Enviar Mensagem</button>
           </form>
         </div>
       </section>
 
     </div>
 
-    <!-- RODAPÉ -->
+    <!-- ====== RODAPÉ (persistente) ====== -->
     <footer class="site-footer">
       <div class="footer-inner">
         <div class="footer-brand">
@@ -525,12 +539,13 @@
           </div>
           <p>Cuidar de si, com confiança e proximidade.</p>
         </div>
-        <p class="footer-copy">© 2026 LifeClinique. Todos os direitos reservados.</p>
+        <p class="footer-copy">© 2026 LifeClinique. Todos os direitos reservados. Projeto fictício desenvolvido para fins pedagógicos.</p>
       </div>
     </footer>
   </main>
 
 </div>
 
+<script src="js/script.js" defer></script>
 </body>
 </html>
