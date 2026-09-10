@@ -48,3 +48,9 @@ open index.html   # or double-click the file
 ## Disclaimer
 
 LifeClinique is a fictional brand created for design and front-end development purposes. Any resemblance to real clinics, healthcare providers or businesses is purely coincidental. No real medical services are offered.
+
+## License
+
+© LifeClinique. All rights reserved.
+
+This repository is public for viewing purposes only, as part of a personal portfolio. No permission is granted to copy, reuse, modify, distribute or otherwise use any part of this code, design or content without prior written consent from the author.
