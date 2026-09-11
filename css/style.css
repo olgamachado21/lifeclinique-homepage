@@ -101,6 +101,47 @@ h1, h2 {
   transform: translateY(-2px);
 }
 
+/* Seletor de idioma (PT / EN) */
+.lang-switch {
+  position: fixed;
+  top: clamp(12px, 2.4vh, 20px);
+  right: clamp(12px, 2.4vw, 24px);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: #FFFFFF;
+  border-radius: 30px 8px 30px 8px;
+  padding: 4px;
+  box-shadow: var(--shadow-md);
+}
+.lang-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  color: var(--color-text-soft);
+  padding: 7px 12px;
+  border-radius: 22px 6px 22px 6px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.lang-btn:hover { color: var(--color-primary-dark); }
+.lang-btn.is-active {
+  background: var(--color-primary);
+  color: #fff;
+}
+.lang-sep {
+  width: 1px;
+  height: 14px;
+  background: #E1E8E6;
+}
+@media (max-width: 480px) {
+  .lang-btn { padding: 6px 9px; font-size: 0.68rem; }
+}
+
 /* Navegação por ícones (sem scroll) - radios escondidos */
 .nav-radio { position: absolute; opacity: 0; pointer-events: none; }
 
@@ -261,8 +302,8 @@ h1, h2 {
 /* Painel Início (hero) */
 .panel-hero {
   background:
-  radial-gradient(circle, rgba(31, 122, 112, 0.10) 1.5px, transparent 1.5px) 0 0 / 22px 22px,
-  linear-gradient(180deg, var(--color-primary-light) 0%, #FFFFFF 100%);
+    radial-gradient(circle, rgba(31, 122, 112, 0.10) 1.5px, transparent 1.5px) 0 0 / 22px 22px,
+    linear-gradient(180deg, var(--color-primary-light) 0%, #FFFFFF 100%);
 }
 
 .hero-inner {
@@ -445,7 +486,7 @@ h1, h2 {
   margin: 0 auto;
 }
 
-/* Testimonials - rotador por pontos (sem scroll) */
+/* Testimonials */
 .testi-radio { position: absolute; opacity: 0; pointer-events: none; }
 
 .testimonial-stage {
@@ -627,7 +668,7 @@ h1, h2 {
 .form-row input:focus, .form-row select:focus, .form-row textarea:focus { outline: none; border-color: var(--color-primary); }
 .form-submit { width: 100%; margin-top: 2px; padding: 11px 24px; }
 
-/* Validação do formulário (JavaScript)  */
+/* Validação do formulário (JavaScript) */
 .form-error-msg {
   display: block;
   min-height: 1em;
@@ -691,15 +732,15 @@ h1, h2 {
   :root { --sidebar-w: 0px; }
   .app-shell { flex-direction: column; }
   .sidebar {
-  position: fixed;
-  top: auto; bottom: 0; left: 0; right: 0;
-  width: 100%; height: auto;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8px 10px;
-  box-shadow: 0 -6px 20px rgba(0,0,0,0.18);
-  overflow-x: auto;
+    position: fixed;
+    top: auto; bottom: 0; left: 0; right: 0;
+    width: 100%; height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    box-shadow: 0 -6px 20px rgba(0,0,0,0.18);
+    overflow-x: auto;
   }
   .sidebar-logo { display: none; }
   .side-nav { flex-direction: row; gap: 0; flex: 1; justify-content: space-between; }
