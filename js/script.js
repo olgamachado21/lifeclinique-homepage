@@ -1,17 +1,6 @@
-/* =========================================================
-   LifeClinique — Melhorias progressivas com JavaScript
-   O site continua a funcionar sem JavaScript (navegação por
-   rádios/CSS); este ficheiro apenas acrescenta comportamentos
-   extra quando o JavaScript está disponível.
-   ========================================================= */
-
 document.addEventListener('DOMContentLoaded', function () {
 
-  /* ---------------------------------------------------------
-     1) Transição suave entre secções
-     Sempre que se muda de secção pela barra lateral, a secção
-     que fica visível recebe uma pequena animação de entrada.
-     --------------------------------------------------------- */
+/* Transição suave entre secções. */
   (function panelTransitions() {
     var navRadios = document.querySelectorAll('.nav-radio');
     if (!navRadios.length) return;
@@ -30,12 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   })();
 
-  /* ---------------------------------------------------------
-     2) Testemunhos com rotação automática
-     Avança automaticamente de 6 em 6 segundos. Pausa enquanto
-     o rato está sobre o carrossel, e também por uns segundos
-     sempre que a pessoa escolhe um testemunho manualmente.
-     --------------------------------------------------------- */
+/* Testemunhos com rotação automática */
   (function testimonialsAutoplay() {
     var radios = Array.prototype.slice.call(document.querySelectorAll('input[name="testi-nav"]'));
     var stage = document.querySelector('.testimonial-stage');
@@ -69,14 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   })();
 
-  /* ---------------------------------------------------------
-     3) Formulário de contacto: validação em tempo real e
-     confirmação sem recarregar a página.
-     Nota: este site não tem servidor por trás, por isso o
-     envio é simulado — os dados não são enviados para lado
-     nenhum. Para um envio real, ligar este formulário a um
-     serviço como o Formspree ou o EmailJS.
-     --------------------------------------------------------- */
+/* Formulário de contacto */
   (function contactFormValidation() {
     var form = document.getElementById('contact-form');
     if (!form) return;
@@ -161,12 +138,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   })();
 
-  /* ---------------------------------------------------------
-     4) Números animados nas estatísticas do Início
-     Os números sobem de 0 até ao valor final sempre que a
-     secção Início fica visível (na primeira vez que a página
-     carrega, e sempre que se volta a essa secção).
-     --------------------------------------------------------- */
+/* Animção dos números */
   (function animatedCounters() {
     var counters = document.querySelectorAll('.hero-stats [data-count-to]');
     var navInicio = document.getElementById('nav-inicio');
